@@ -93,8 +93,8 @@ body{
    
  
  .sticky{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 0px;
     position: sticky;
     left: 90%;
     bottom:10px;
@@ -102,14 +102,7 @@ body{
 
  .c4{
     grid-area: footer;
-  
- }
-
-
-    
-    
-    
-
+}
 footer{
     background-color: black;
     height: 200px;
@@ -123,7 +116,14 @@ footer{
     justify-content: center;
     
 } 
+  
+
+
+    
 /* NOSOTROS */
+    
+    
+
 
              
 .h1-nosotros{
@@ -301,20 +301,7 @@ footer{
       color:midnightblue ;
       text-align: start;
 }
-.logo-container-footer{
-    display: flex;
-    list-style: none;
-    position: relative;
-    left: 400px;
-   
-   
- }
- .logo-container-footer li{
-     margin-left: 50px;
-     height: 40px;
-     display: flex;
-     
- }
+
 .row-proyectos{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -354,23 +341,17 @@ footer{
         color:midnightblue ;
         text-align: center;
     }
-    .logo-container-footer{
-        display: flex;
-        list-style: none;
-        padding: 0px;
-        
-        
-  }
+    .navbar-toggler{
+        background-color: beige;
+    }
    
-   .navbar-toggler{
+   
     
-    background-color: beige;
-   }
 
        
-    
-    
     /* NOSOTROS MOBILE*/
+    
+    
     
     .div-nosotros{
         display: grid;
@@ -388,13 +369,15 @@ footer{
     .row-proyectos{
         display: grid;
         grid-template-columns: 1fr;
+        width: 500px;
        
     }
     .col{
         width: 300px;
+        
     }
     .text-proyectos{
-        width: 100%;
+        width: 500px;
         color: midnightblue;
         font-size: 20px;
         justify-content: start
@@ -404,8 +387,8 @@ footer{
     .h1-proyectos{
         color: midnightblue;
         font-size: 30px;
-        text-align: center;
-        width: 100%;
+        margin-left: 470px;
+        width: 300px;
     }
 
 
@@ -413,11 +396,14 @@ footer{
 
     .form{
         background-color:midnightblue; 
-        width: 100%;
+        width: 350px;
         border-radius: 10px;
        
-    }
+    }.form-container{
+        width: 300px;
+    
 }
+  }
         
    
 
@@ -429,6 +415,5 @@ footer{
 
     
     
-
 
 
