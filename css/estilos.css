@@ -93,8 +93,8 @@ body{
    
  
  .sticky{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     position: sticky;
     left: 90%;
     bottom:10px;
@@ -103,27 +103,12 @@ body{
     grid-area: footer;
   
  }
- .logo-container-footer{
-    display: flex;
-    list-style: none;
-    position: relative;
-    left: 400px;
-   
-   
- }
- .logo-container-footer li{
-     margin-left: 50px;
-     height: 40px;
-     display: flex;
-     
- }
+
+
     
     
     
-.logo2{
-    width: 30px;
-    height: 30px;
-}
+
 footer{
     background-color: black;
     height: 200px;
@@ -315,16 +300,20 @@ footer{
       color:midnightblue ;
       text-align: start;
 }
-     .logoContainer2{
-      display: flex;
-      list-style: none;
-      margin: auto;
- } 
- .logoContainer2 li{
-    margin-left: 100px;
-    height: 40px;
-    align-items: center;
-}
+.logo-container-footer{
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 400px;
+   
+   
+ }
+ .logo-container-footer li{
+     margin-left: 50px;
+     height: 40px;
+     display: flex;
+     
+ }
 .row-proyectos{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -351,7 +340,7 @@ footer{
 
           /* MOBILE */
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:600px) {
     .row-index{
         display: grid;
         grid-template-columns: 6fr;
@@ -364,15 +353,15 @@ footer{
         color:midnightblue ;
         text-align: center;
     }
-    .logoContainer2{
-        display: flex;
-        list-style: none;
-        margin: auto;
-     
-    }
-    .logoContainer2 li{
-        margin-left: 35px;
-    }
+   
+   .navbar-toggler{
+    
+    background-color: beige;
+   }
+
+       
+    
+    
     /* NOSOTROS MOBILE*/
     
     .div-nosotros{
@@ -391,17 +380,16 @@ footer{
     .row-proyectos{
         display: grid;
         grid-template-columns: 1fr;
-        margin: auto;
-        width: 100%;
        
     }
     .col{
-        width: 500px;
+        width: 300px;
     }
     .text-proyectos{
         width: 100%;
         color: midnightblue;
-        font-size: 50px;
+        font-size: 20px;
+        justify-content: start
     }
         
         
@@ -418,19 +406,13 @@ footer{
     .form{
         background-color:midnightblue; 
         width: 100%;
-        max-width: auto;
         border-radius: 10px;
-        padding: 5px 20px;
-        margin:auto; 
+       
     }
-    .form-h2{
-        width: 100%;
-        align-items: center;
-      margin: auto;
-        
-        color: midnightblue;
 }
-  }
+        
+   
+
         
 
      
