@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body{
     background-color: rgba(202, 202, 195, 0.912);
@@ -99,6 +99,7 @@ body{
     left: 90%;
     bottom:10px;
 }
+
  .c4{
     grid-area: footer;
   
@@ -353,6 +354,13 @@ footer{
         color:midnightblue ;
         text-align: center;
     }
+    .logo-container-footer{
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        
+        
+  }
    
    .navbar-toggler{
     
