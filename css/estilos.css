@@ -17,10 +17,11 @@ body{
 }
 .c1{
 
-    grid-area: header;
- }
+grid-area: header;
+
+}
  .logoContainer{
-     width: 1000px;
+     
      height: 320px;
      margin-left: 70px;
  }
@@ -77,6 +78,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+    gap: 25px;
 }
 .container-index-text{
     text-align: center;
@@ -93,16 +95,25 @@ body{
    
  
  .sticky{
-    height: 70px;
-    width: 0px;
+    width: 100%;
     position: sticky;
-    left: 90%;
-    bottom:10px;
+    bottom: 10px;
+    
+    
+    
+}
+.logo-sticky{
+    width: 60px;
+    height: 60px;
+    position: sticky;
+    left: 1100px;
 }
 
  .c4{
     grid-area: footer;
-}
+
+} 
+
 footer{
     background-color: black;
     height: 200px;
@@ -116,6 +127,27 @@ footer{
     justify-content: center;
     
 } 
+.logo-container-footer ul{
+    display: flex;
+    padding: 0px;
+    margin-left: 430px;
+
+  
+}
+    
+    
+   
+
+.logo-container-footer li{
+    margin-left: 50px;
+    height: 40px;
+    list-style: none; 
+    
+}
+.logo2{
+    width: 30px;
+    height: 30px;
+}
   
 
 
@@ -141,12 +173,20 @@ footer{
  display: grid;
  grid-template-columns: 1fr 1fr;
  margin-top: 50px;
+ margin-left: 20px;
   
 }
-.p-quienes-somos{
-    width: 400px;
-    margin: auto;
+.imagen-1{
+    position: relative;
+    bottom: 50px;
 }
+.text-quienes-somos{
+    padding: 50px;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
 .div-mision{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -154,51 +194,46 @@ footer{
     margin-top: 50px;
     margin-left: 20px;
 }
-.p-mision{
-    width: 400px;
-    margin: auto;
-}
+
 .h2-nosotros{
     width: 300px;
     text-align: center;
     position: relative;
-    left: 620px;
-    top: 70px;
+    left: 520px;
     color: midnightblue;
     font-size: 30px;
+    
 }
-.p-vision{
-    width: 400px;
-    margin: auto;
+.text-vision{
+    padding: 50px;
     position: relative;
-    bottom: 20px;
+    bottom: 100px;
 }
+
 .h3-nosotros{
     position: relative;
-    left: 705px;
-    bottom: 30px;
+    left: 550px;
+    bottom: 150px;
     color: midnightblue;
     font-size: 30px;
-}
-.p-valores{
-    width: 400px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: relative;
-    left: 80px;
-    bottom: 80px;
 }
 .imagen-valores{
     position: relative;
-    left: 600px;
-    bottom: 400px;
+    left: 480px;
+    bottom: 220px;
 }
 .h4-valores{
     position: relative;
-    left: 150px;
-    bottom: 150px;
+    left: 100px;
+    bottom: 350px;
     font-size: 30px;
     color:midnightblue ;
+}
+.text-valores{
+    width: 400px;
+    position: relative;
+    left: 70px;
+    bottom: 300px;
 }
 
        /* PROYECTOS */
@@ -217,8 +252,11 @@ footer{
 }
 .h1-proyectos{
     color: midnightblue;
-    font-size: 40px;
-    margin-left: 55px;
+    font-size: 30px;
+    margin: 20px 0px 20px 55px;
+}
+.container-proyectos{
+    margin-left: 35px;
 }
 /* CONTACTO */
 
@@ -277,15 +315,48 @@ footer{
     left: 380px;
     color: midnightblue;
 }
+/* INMUEBLES */
 
-  
+h1{
+    width: 100%;
+    font-size: 30px;
+    color:midnightblue ;
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    color:midnightblue ;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.container-alquiler{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 30px;
+    
+    
+}
+.column-inmueble{
+    width: 300px;
+   padding: 10px;
+   align-items: center;
+
+}
+h3{
+    color:midnightblue ;
+    margin-left: 30px;
+    margin-top: 50px;
+}
 
 
          /* TABLET */
+
+
 @media screen and (max-width:900px){
     .row-index{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr auto;
         width: 100%;
         
  } 
@@ -295,16 +366,21 @@ footer{
      margin: auto;
      gap: 10px;
 }
+.navbar-toggler{
+    background-color: beige;
+}
      .h1-index{
-      width: 100%;
+      width: 80%;
       font-size: 30px;
       color:midnightblue ;
       text-align: start;
+      margin: 0%;
 }
+
 
 .row-proyectos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     margin: auto;
     width: 100%;
    
@@ -319,10 +395,26 @@ footer{
     color: midnightblue;
     font-size: 35px;
     align-items: center;
-    width: 100%;
+    width: 70%;
 }
+.logo-container-footer ul{
+    width: 100%;
+    align-items: center;
+    margin: 0%;
+    position: relative;
+    left: 60px;
+   }
+   .container-alquiler{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
 
 }
+
+
+
 
 
 
@@ -330,82 +422,118 @@ footer{
 
   @media screen and (max-width:600px) {
     .row-index{
-        display: grid;
-        grid-template-columns: 6fr;
-        width: 100%;
-        
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      margin: auto;
     }
+    .column-index{
+        margin: auto;
+    }
+       
     .h1-index{
         width: 100%;
         font-size: 30px;
         color:midnightblue ;
         text-align: center;
+        margin: 0%;
     }
     .navbar-toggler{
         background-color: beige;
     }
-   
-   
-    
-
+     .logo-container-footer ul{
+         width: 100%;
+         align-items: center;
+         margin: 0px;
+        }
+      
+        /* PROYECTOS MOBILE */
+        .row-proyectos{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+           
+        }
+        .col{
+            width: 300px;
+            
+        }
+        .text-proyectos{
+            width: 80%;
+            color: midnightblue;
+            font-size: 20px;
+            justify-content: start;
+           
+            
+        }
        
-    /* NOSOTROS MOBILE*/
+            
+        .h1-proyectos{
+            color: midnightblue;
+            font-size: 20px;
+            width: 80%;
+            align-items: center;
+           
+           
+        }
+        .logo-sticky{
+            width: 70px;
+            height: 70px;
+            position: sticky;
+            left: 80%;
+        }
+        .logo-container-footer ul{
+            width: 70%;
+            align-items: center;
+            position: relative;
+            left: 20px;
+        }
+        /* INMUEBLES MOBILE */
+
+    .container-alquiler{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    .logo-sticky{
+        width: 70px;
+        height: 70px;
+        position: sticky;
+        left: 80%;
+    }
     
     
-    
-    .div-nosotros{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 50px;
-    }
-    .div-mision{
-        display: grid;
-        grid-template-columns: 1fr;
-        
-        margin-left: 20px;
-        margin-top: 50px;
-    }
-    /* PROYECTOS MOBILE */
-    .row-proyectos{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 500px;
-       
-    }
-    .col{
-        width: 300px;
-        
-    }
-    .text-proyectos{
-        width: 500px;
-        color: midnightblue;
-        font-size: 20px;
-        justify-content: start
-    }
-        
-        
-    .h1-proyectos{
-        color: midnightblue;
-        font-size: 30px;
-        margin-left: 470px;
-        width: 300px;
-    }
-
-
-    /* CONTACTO MOBILE */
-
-    .form{
-        background-color:midnightblue; 
-        width: 350px;
-        border-radius: 10px;
-       
-    }.form-container{
-        width: 300px;
     
 }
-  }
+    
+        /* CONTACTO MOBILE */
+    
+        .form{
+            background-color:midnightblue; 
+            width: 350px;
+            border-radius: 10px;
+           
+        }.form-container{
+            width: 300px;
+        
+    }
+      }
+            
+       
+            
+           
+           
+             
+
+
+        
         
    
+   
+    
+
+       
+    
 
         
 
