@@ -1,0 +1,177 @@
+@mixin tablet {
+    @media screen and (max-width: 992px){
+        @content ;
+    }
+    
+}
+@mixin mobile {
+    @media screen and (max-width:576px) {
+        @content ;
+    }
+}
+
+
+$color-title: midnightblue;
+$font-title: 'Playfair Display', serif;
+$size-title:30px;
+
+
+
+
+
+body{
+    background-color: rgb(233,233,170);
+
+}
+    
+
+    .grid-layout{
+    height: 2000px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'header header'
+                         'navigator navigator'
+                         'contenido contenido'
+                         'footer footer';
+    grid-template-rows: 8% 3% auto 10%;
+}
+#header{
+    width: 100%;
+}
+.c1{
+
+    grid-area: header;
+    width: 100%;
+}
+
+
+.imagen-carousel{
+    width: 100%;
+   
+}
+
+.logoContainer{
+        height: 150px;
+       
+        .logo{
+            width: 270px;
+            height: 170px;
+    
+        }
+                
+    }
+   
+
+
+
+.c2{ 
+    grid-area: navigator ;
+    width: 100%;
+    
+}
+.btn{
+    position: sticky;
+    top: 10px;
+        &:hover{
+            background-color: rgb(124, 121, 121); ;   
+            border-radius: $color-title ; 
+        }
+
+    }
+
+
+ 
+
+ .navbar-brand{
+    color: $color-title;
+    font-family: $font-title;
+    font-size: 20px;
+         &:hover{
+                color: white;
+                background-color:rgb(124, 121, 121);;
+                border-radius: 5px;
+                padding: 10px;
+               
+         }
+    }
+ .nav-link{
+    color: $color-title;
+    font-family: $font-title;
+    font-size: 20px;
+         &:hover{
+                color: white;
+                background-color:rgb(124, 121, 121);
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+            
+.c3{
+    grid-area: contenido;
+    width: 100vw;
+} 
+.h1-index{
+    width: 100%;
+    font-size: $size-title;
+    
+    font-family: $font-title ;
+    color:$color-title ;
+    text-align: center;
+    margin-top: 10px;
+ }
+ .sticky{
+    width: 100%;
+    position: sticky;
+    top: 10px;
+      .logo-sticky{
+            width: 60px;
+            height: 60px;
+            position: sticky;
+            left: 90%;
+         
+    }
+}
+
+.c4{
+    grid-area: footer;
+    width: 100vw;
+} 
+
+ .container-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .card{
+        margin: auto;
+        margin-top: 30px;
+        background-color: whitesmoke;
+    }
+
+      @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+      @include mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+       
+      
+
+    
+}
+ 
+
+
+
+    
+    
+
+
+
+    
+    
+    
+    
+      
+
+    

@@ -1,0 +1,81 @@
+@mixin tablet {
+  @media screen and (max-width: 992px){
+      @content ;
+  }
+  
+}
+@mixin mobile {
+  @media screen and (max-width:576px) {
+      @content ;
+  }
+}
+$size-titulos:30px;
+body{
+  width: 100vw;
+}
+
+
+
+
+.container-nosotros{
+   margin-top: 40px;
+    width: 100%;
+   
+  
+      p{
+           width: 350px;
+           padding: 30px;
+         }
+           h1{
+              font-size: $size-titulos;
+              width: 50%;
+              
+
+                    }
+                h2{
+                    font-size: $size-titulos;
+                }
+                     h3{
+                          font-size: $size-titulos;
+                          position: relative;
+                          bottom: 30px;
+                          
+                }
+                .div-1{
+                  position: relative;
+                  right: 150px;
+                }
+                .div-2{
+                  position: relative;
+                  right: 150px;
+                  top: 50px;
+                }
+                .div-3{
+                  position: relative;
+                  right: 150px;
+                  top: 50px;
+                }
+                
+
+                @include tablet{
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                 
+                  h1{
+                    margin: auto;
+                  }
+              }
+
+                @include mobile{
+                display: block;
+                width: 100%;
+                h1{
+                  margin: auto;
+                }
+                h3{
+                  position: relative;
+                  top: 30px;
+                }
+              }
+
+}

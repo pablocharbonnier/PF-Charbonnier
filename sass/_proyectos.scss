@@ -1,0 +1,97 @@
+@mixin tablet {
+    @media screen and (max-width: 992px){
+        @content ;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:576px) {
+        @content ;
+    }
+}
+$color-title:midnightblue;
+ 
+ .container-proyectos{
+         
+            margin-top: 80px;
+            width: 100%;
+
+
+        .row-proyectos{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                   
+                    }
+              .text-proyectos{
+                      width: 450px;
+                      margin-left: 20px;
+                      color: $color-title;
+                }
+                        .h1-proyectos{
+                            color: $color-title;
+                            width: 100%;
+                           
+                           }
+                                 .col{
+                                     width: 500px;
+                                     margin: auto;
+                                  }
+                                  @include tablet{
+                                    .container-proyectos{
+                                        width: 300px;
+                                    }
+                                    .h1-proyectos{
+                                        width: 100%;
+                                        
+                                       
+                                    }
+                                    .row-proyectos{
+                                        width: 90%;
+                                    }
+                                    .col{
+                                        width: 300px;
+                                        margin: auto;
+                                     }
+                                    
+                                    .text-proyectos{
+                                        position: relative;
+                                        left: 50px;
+                                        width: 400px;
+                                    }
+
+
+
+
+                                  }
+                                  @include mobile{
+                                    .container-proyectos{
+                                        align-items: center;
+                                    }
+                                    .row-proyectos{
+                                        width: 100%;
+                                        display: grid;
+                                        grid-template-columns: 1fr;
+                                        margin: auto;
+                                    }
+                                    .col{
+                                        width: 70%;
+                                        margin-left: 50px;
+                                    }
+                                    h1{
+                                        margin: auto;
+                                        margin-bottom: 10px;
+                                    }
+                                    .text-proyectos{
+                                        align-items: center;
+                                        width: 350px;
+                                        margin-left: 20px;
+                                    }
+                                  }
+                                
+            }
+                
+    
+                    
+                    

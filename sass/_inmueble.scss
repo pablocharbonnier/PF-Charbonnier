@@ -1,0 +1,67 @@
+@mixin tablet {
+    @media screen and (max-width: 992px){
+        @content ;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:576px) {
+        @content ;
+    }
+}
+$color-title: midnightblue;
+$size-title:30px;
+ 
+ /* INMUEBLES */
+
+
+ h1{
+    width: 100%;
+    font-size: $size-title;
+    color: $color-title ;
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    color: $color-title ;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.container-alquiler{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    .column-inmueble{
+        width: 300px;
+        padding: 10px;
+        align-items: center;
+    
+    }
+    @include tablet{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        
+    @include mobile{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .column-inmueble{
+           width: 200px;
+           position: relative;
+           left: 80px;
+        }
+        
+
+    
+}
+
+h3{
+    color: $color-title ;
+    margin-left: 30px;
+    margin-top: 50px;
+}
