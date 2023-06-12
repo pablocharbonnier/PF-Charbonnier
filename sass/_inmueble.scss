@@ -31,7 +31,13 @@ h2{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
+    h3{
+        color: $color-title ;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    
+    
     .column-inmueble{
         width: 300px;
         padding: 10px;
@@ -60,8 +66,3 @@ h2{
     
 }
 
-h3{
-    color: $color-title ;
-    margin-left: 30px;
-    margin-top: 50px;
-}

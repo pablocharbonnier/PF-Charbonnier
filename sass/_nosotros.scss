@@ -10,9 +10,6 @@
   }
 }
 $size-titulos:30px;
-body{
-  width: 100vw;
-}
 
 
 
@@ -35,12 +32,7 @@ body{
                 h2{
                     font-size: $size-titulos;
                 }
-                     h3{
-                          font-size: $size-titulos;
-                          position: relative;
-                          bottom: 30px;
-                          
-                }
+                    
                 .div-1{
                   position: relative;
                   right: 150px;
@@ -60,6 +52,24 @@ body{
                 @include tablet{
                   display: grid;
                   grid-template-columns: 1fr 1fr;
+                  .imagen-valores{
+                    width: 400px;
+                   margin: auto;
+                   position: relative;
+                   left: 200px;
+                  }  
+                  .imagen-1{
+                    width: 450px;
+                    margin: auto;
+                    position: relative;
+                    left: 200px;
+                  }
+                  img{
+                    width: 450px;
+                    margin: auto;
+                    position: relative;
+                    left: 200px;
+                  }
                  
                   h1{
                     margin: auto;
@@ -67,15 +77,47 @@ body{
               }
 
                 @include mobile{
-                display: block;
-                width: 100%;
+                      display:grid;
+                      grid-template-columns: 1fr;
+                      width: 100%;
+                      .imagen-valores{
+                        width: 350px;
+                        margin:auto;
+                     
+                      }  
+                      .imagen-1{
+                        width: 350px;
+                        margin: auto;
+                        position: relative;
+                        bottom: 40px;
+                      }
+                      img{
+                        width: 350px;
+                        margin: auto;
+                      }
+                      p{
+                        width: 550px;
+                        padding: 50px;
+                      }
+
                 h1{
-                  margin: auto;
+                  position: relative;
+                  right: 100px;
+                  
                 }
                 h3{
                   position: relative;
-                  top: 30px;
+                  top: 40px;
                 }
               }
+             
 
+}
+h3{
+  font-size: $size-titulos;
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+  color: midnightblue;
+  
 }

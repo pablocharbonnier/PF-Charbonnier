@@ -31,20 +31,22 @@ footer{
         display: flex;
         padding: 0px;
         margin-left: 430px;
+        li{
+            margin-left: 50px;
+            height: 40px;
+            list-style: none; 
+          
+            
+        }
         @include tablet{
             margin-left: 28%;
          }
          @include mobile{
-            margin-left: 18%;
+            width: 100%;
+            margin: auto;
          }
     }
-    .logo-container-footer li{
-        margin-left: 50px;
-        height: 40px;
-        list-style: none; 
-      
-        
-    }
+    
     
       
     

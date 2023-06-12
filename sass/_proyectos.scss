@@ -10,6 +10,12 @@
     }
 }
 $color-title:midnightblue;
+
+.form-control{
+    position: relative;
+    right: 20px;
+}
+
  
  .container-proyectos{
          
@@ -51,14 +57,14 @@ $color-title:midnightblue;
                                         width: 90%;
                                     }
                                     .col{
-                                        width: 300px;
+                                        width: 100%;
                                         margin: auto;
                                      }
                                     
                                     .text-proyectos{
                                         position: relative;
                                         left: 50px;
-                                        width: 400px;
+                                        width: 100%;
                                     }
 
 
@@ -66,17 +72,18 @@ $color-title:midnightblue;
 
                                   }
                                   @include mobile{
-                                    .container-proyectos{
-                                        align-items: center;
-                                    }
+                                    margin-top: 80px;
+                                    width: 100%;
+                        
+                                
                                     .row-proyectos{
-                                        width: 100%;
+                                        width: 80%;
                                         display: grid;
                                         grid-template-columns: 1fr;
                                         margin: auto;
                                     }
                                     .col{
-                                        width: 70%;
+                                        width: 80%;
                                         margin-left: 50px;
                                     }
                                     h1{
@@ -85,7 +92,7 @@ $color-title:midnightblue;
                                     }
                                     .text-proyectos{
                                         align-items: center;
-                                        width: 350px;
+                                        width: 80%;
                                         margin-left: 20px;
                                     }
                                   }

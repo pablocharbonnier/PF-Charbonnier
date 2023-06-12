@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(233, 233, 170);
 }
@@ -37,14 +41,13 @@ body {
 }
 
 .btn {
-  position: sticky;
-  top: 10px;
+  position: relative;
+  right: 20px;
 }
 .btn:hover {
   background-color: rgb(124, 121, 121);
   border-radius: midnightblue;
 }
-
 .navbar-brand {
   color: midnightblue;
   font-family: "Playfair Display", serif;
@@ -69,9 +72,62 @@ body {
   padding: 10px;
 }
 
+.form-control {
+  position: relative;
+  right: 20px;
+}
+
 .c3 {
   grid-area: contenido;
-  width: 100vw;
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+.row .col {
+  width: 600px;
+}
+@media screen and (max-width: 992px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .row .col {
+    width: 400px;
+  }
+  .row .row {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 500px;
+  }
+  .row .c3 {
+    width: 500px;
+  }
+  .row .row {
+    width: 500px;
+    margin: auto;
+  }
+  .row .col {
+    width: 500px;
+  }
+  .row .logo-sticky {
+    position: sticky;
+    left: 80%;
+  }
+}
+
+.card {
+  background-color: rgb(238, 238, 176);
 }
 
 .h1-index {
@@ -100,32 +156,6 @@ body {
   width: 100vw;
 }
 
-.container-index {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.container-index .card {
-  margin: auto;
-  margin-top: 30px;
-  background-color: whitesmoke;
-}
-@media screen and (max-width: 992px) {
-  .container-index {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container-index {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-body {
-  width: 100vw;
-}
-
 .container-nosotros {
   margin-top: 40px;
   width: 100%;
@@ -140,11 +170,6 @@ body {
 }
 .container-nosotros h2 {
   font-size: 30px;
-}
-.container-nosotros h3 {
-  font-size: 30px;
-  position: relative;
-  bottom: 30px;
 }
 .container-nosotros .div-1 {
   position: relative;
@@ -165,22 +190,73 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .container-nosotros .imagen-valores {
+    width: 400px;
+    margin: auto;
+    position: relative;
+    left: 200px;
+  }
+  .container-nosotros .imagen-1 {
+    width: 450px;
+    margin: auto;
+    position: relative;
+    left: 200px;
+  }
+  .container-nosotros img {
+    width: 450px;
+    margin: auto;
+    position: relative;
+    left: 200px;
+  }
   .container-nosotros h1 {
     margin: auto;
   }
 }
 @media screen and (max-width: 576px) {
   .container-nosotros {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
   }
-  .container-nosotros h1 {
+  .container-nosotros .imagen-valores {
+    width: 350px;
     margin: auto;
+  }
+  .container-nosotros .imagen-1 {
+    width: 350px;
+    margin: auto;
+    position: relative;
+    bottom: 40px;
+  }
+  .container-nosotros img {
+    width: 350px;
+    margin: auto;
+  }
+  .container-nosotros p {
+    width: 550px;
+    padding: 50px;
+  }
+  .container-nosotros h1 {
+    position: relative;
+    right: 100px;
   }
   .container-nosotros h3 {
     position: relative;
-    top: 30px;
+    top: 40px;
   }
+}
+
+h3 {
+  font-size: 30px;
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+  color: midnightblue;
+}
+
+.form-control {
+  position: relative;
+  right: 20px;
 }
 
 .container-proyectos {
@@ -216,27 +292,28 @@ body {
     width: 90%;
   }
   .container-proyectos .col {
-    width: 300px;
+    width: 100%;
     margin: auto;
   }
   .container-proyectos .text-proyectos {
     position: relative;
     left: 50px;
-    width: 400px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
-  .container-proyectos .container-proyectos {
-    align-items: center;
+  .container-proyectos {
+    margin-top: 80px;
+    width: 100%;
   }
   .container-proyectos .row-proyectos {
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
   }
   .container-proyectos .col {
-    width: 70%;
+    width: 80%;
     margin-left: 50px;
   }
   .container-proyectos h1 {
@@ -245,7 +322,7 @@ body {
   }
   .container-proyectos .text-proyectos {
     align-items: center;
-    width: 350px;
+    width: 80%;
     margin-left: 20px;
   }
 }
@@ -269,7 +346,11 @@ h2 {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+}
+.container-alquiler h3 {
+  color: midnightblue;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 .container-alquiler .column-inmueble {
   width: 300px;
@@ -294,12 +375,6 @@ h2 {
   width: 200px;
   position: relative;
   left: 80px;
-}
-
-h3 {
-  color: midnightblue;
-  margin-left: 30px;
-  margin-top: 50px;
 }
 
 /* CONTACTO */
@@ -376,6 +451,11 @@ footer .pFooter {
   padding: 0px;
   margin-left: 430px;
 }
+.logo-container-footer ul li {
+  margin-left: 50px;
+  height: 40px;
+  list-style: none;
+}
 @media screen and (max-width: 992px) {
   .logo-container-footer ul {
     margin-left: 28%;
@@ -383,14 +463,9 @@ footer .pFooter {
 }
 @media screen and (max-width: 576px) {
   .logo-container-footer ul {
-    margin-left: 18%;
+    width: 100%;
+    margin: auto;
   }
-}
-
-.logo-container-footer li {
-  margin-left: 50px;
-  height: 40px;
-  list-style: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
