@@ -103,7 +103,7 @@ body {
     width: 900px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 370px) and (max-width: 576px) {
   .row {
     display: grid;
     grid-template-columns: 1fr;
