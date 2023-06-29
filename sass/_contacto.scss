@@ -1,14 +1,22 @@
  /* CONTACTO */
-
+ $size-title:40px;
+ $font-title: 'Playfair Display', serif;
  
-
+.contacto{
+    text-align: center;
+    color: rgb(25, 25, 112); 
+    font-size: $size-title;
+    font-family: $font-title;
+    
+}
  .form{
-    background-color:midnightblue; 
+    background-color: rgba(25, 25, 112, 10%);
+    box-shadow: 2px 2px 7px grey;
     width: 90%;
     max-width: 400px;
     border-radius: 10px;
     padding: 5px 20px;
-    margin:auto; 
+    margin: auto;
     height: 700px;
     
     
@@ -24,7 +32,7 @@
     font-size: 25px;
     margin-bottom: 5px;
     width: 70%;
-    color: white;
+    color: midnightblue;
     margin: auto;
     
 }
@@ -42,7 +50,7 @@
 }
 .form-cta{
     font-size: 15px;
-    background-color:rgba(77, 77, 75, 0.912);
+    background-color:rgb(77, 77, 75, );
     color: white;
     border: none;
     font-weight: 300px;

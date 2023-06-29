@@ -3,14 +3,19 @@
 
 
 
-@use "variables" ;
-@use "index" ;
-@use "nosotros" ;
-@use "proyectos" ;
-@use "inmueble" ;
-@use "contacto" ;
-@use "partials/footer" ;
-@use "partials/media-queris";
+@use "./variables" ;
+@use "./index" ;
+@use "./nosotros" ;
+@use "./proyectos" ;
+@use "./inmueble" ;
+@use "./contacto" ;
+@use "./partials/footer";
+@use "./partials/media-queris" ;
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 

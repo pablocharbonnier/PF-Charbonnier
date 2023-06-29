@@ -9,115 +9,105 @@
       @content ;
   }
 }
+
 $size-titulos:30px;
+$color-title: rgb(25, 25, 112,);
 
 
 
 
-.container-nosotros{
-   margin-top: 40px;
-    width: 100%;
    
-  
-      p{
-           width: 350px;
-           padding: 30px;
-         }
-           h1{
-              font-size: $size-titulos;
-              width: 50%;
-              
-
-                    }
-                h2{
-                    font-size: $size-titulos;
-                }
-                    
-                .div-1{
-                  position: relative;
-                  right: 150px;
-                }
-                .div-2{
-                  position: relative;
-                  right: 150px;
-                  top: 50px;
-                }
-                .div-3{
-                  position: relative;
-                  right: 150px;
-                  top: 50px;
-                }
-                
-
-                @include tablet{
-                  display: grid;
-                  grid-template-columns: 1fr 1fr;
-                  .imagen-valores{
-                    width: 400px;
-                   margin: auto;
-                   position: relative;
-                   left: 200px;
-                  }  
-                  .imagen-1{
-                    width: 450px;
-                    margin: auto;
-                    position: relative;
-                    left: 200px;
-                  }
-                  img{
-                    width: 450px;
-                    margin: auto;
-                    position: relative;
-                    left: 200px;
-                  }
-                 
-                  h1{
-                    margin: auto;
-                  }
-              }
-
-                @include mobile{
-                      display:grid;
-                      grid-template-columns: 1fr;
-                      width: 100%;
-                      .imagen-valores{
-                        width: 350px;
-                        margin:auto;
-                     
-                      }  
-                      .imagen-1{
-                        width: 350px;
-                        margin: auto;
-                        position: relative;
-                        bottom: 40px;
-                      }
-                      img{
-                        width: 350px;
-                        margin: auto;
-                      }
-                      p{
-                        width: 550px;
-                        padding: 50px;
-                      }
-
-                h1{
-                  position: relative;
-                  right: 100px;
-                  
-                }
-                h3{
-                  position: relative;
-                  top: 40px;
-                }
-              }
+.container-nosotros{
+  margin-top: 40px;
+ 
+  width: 100%;
+ 
+ 
+     p{
+          width: 350px;
+          text-align: center;
+         
+          
+        }
+          h1{
+             text-align: center;
+             font-size: 30px;
+             width: 100%;
+             text-transform: capitalize;
              
 
-}
-h3{
-  font-size: $size-titulos;
-  position: relative;
-  left: 20px;
-  bottom: 30px;
-  color: midnightblue;
-  
+                   }
+               h2{
+                   font-size:  30px;
+                   text-align: center;
+               }
+                    h3{
+                         font-size: 30px;
+                         position: relative;
+                         bottom: 10px;
+                         padding: auto;
+                         text-align: center;
+                         
+               }
+              
+               .div-2{
+                 position: relative;
+                 top: 50px;
+                
+               }
+               .div-3{
+                 position: relative;
+                
+                 top: 50px;
+               }
+               
+               
+
+               @include tablet{
+                 display: grid;
+                 grid-template-columns: 1fr 1fr;
+                
+                 h1{
+                   margin: auto;
+                 }
+             }
+
+               @include mobile{
+               display: block;
+               width: 100%;
+             
+               .col{
+                width: 100%;
+                height: 700px;
+                margin-left: 60px;
+               }
+               h1{
+                width: 100%;
+                 margin: auto;
+                 font-size: 40px;
+               }
+               h2{
+                width: 100%;
+                text-align: center;
+                font-size: 40px;
+               }
+               h3{
+                width: 100%;
+                 position: relative;
+                 top: 30px;
+                 padding: 30px;
+                 text-align: center;
+                 font-size: 40px;
+               
+               }
+               p{
+                width: 550px;
+                text-align: center;
+                font-size: 30px;
+               }
+            
+               
+               
+             }
+
 }

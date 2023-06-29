@@ -10,6 +10,7 @@
     }
 }
 $color-title:midnightblue;
+$font-title: 'Playfair Display', serif;
 
 .form-control{
     position: relative;
@@ -31,18 +32,24 @@ $color-title:midnightblue;
                    
                     }
               .text-proyectos{
-                      width: 450px;
-                      margin-left: 20px;
+                      width: 500px;
+                      padding-left: 40px;
                       color: $color-title;
                 }
                         .h1-proyectos{
                             color: $color-title;
                             width: 100%;
+                            font-family: $font-title ;
+                            font-size: 40px;
+                            margin-bottom: 50px;
+                            text-shadow: 2px 2px 5px grey;
+                            text-transform: uppercase;
                            
                            }
                                  .col{
                                      width: 500px;
-                                     margin: auto;
+                                     margin: 0 5px;
+                                   
                                   }
                                   @include tablet{
                                     .container-proyectos{
@@ -62,8 +69,7 @@ $color-title:midnightblue;
                                      }
                                     
                                     .text-proyectos{
-                                        position: relative;
-                                        left: 50px;
+                                       padding-left: 10px;
                                         width: 100%;
                                     }
 
@@ -77,14 +83,15 @@ $color-title:midnightblue;
                         
                                 
                                     .row-proyectos{
-                                        width: 80%;
+                                        width: 100%;
                                         display: grid;
                                         grid-template-columns: 1fr;
                                         margin: auto;
                                     }
                                     .col{
-                                        width: 80%;
-                                        margin-left: 50px;
+                                        width: 100%;
+                                        margin-left: 5px;
+                                        
                                     }
                                     h1{
                                         margin: auto;
@@ -92,8 +99,9 @@ $color-title:midnightblue;
                                     }
                                     .text-proyectos{
                                         align-items: center;
-                                        width: 80%;
-                                        margin-left: 20px;
+                                        width: 100%;
+                                       
+                                        font-size: 25px;
                                     }
                                   }
                                 
