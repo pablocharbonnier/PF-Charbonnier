@@ -381,14 +381,14 @@ h2 {
   margin: auto;
 }
 @media screen and (max-width: 992px) {
-  .container-alquiler .p-inmueble {
+  .container-alquiler {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 576px) {
-  .container-alquiler .p-inmueble {
+  .container-alquiler {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
