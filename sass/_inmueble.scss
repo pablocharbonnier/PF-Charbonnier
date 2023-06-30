@@ -39,45 +39,34 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
    
-   
-   
-    
-    
     .column-inmueble{
         width: 380px;
         color: $color-title;
         flex-direction: column;
         text-align: center;
-       
+    }
+    .p-inmueble{
+        width: 200px;
+        margin: auto;
         
-        
-        }
-        .p-inmueble{
+     
+     @include tablet{
+             width: 100%;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+         }
+         
+         
+     @include mobile{
+             width: 100%;
+             display: grid;
+             grid-template-columns: 1fr;
            
-            width: 200px;
-            margin: auto;
-           
-        }
+             
+         }
         
-       
-        
-       
-
+    }
     
-    @include tablet{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        
-        
-    @include mobile{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-          
-            
-        }
         .column-inmueble{
            width: 100%;
            flex-direction: column;
@@ -88,9 +77,11 @@ h2{
            width:90%;
            position: relative;
            left: 5px;
+           box-shadow: 2px 2px 5px grey;
           
           
         }
+   
         .p-inmueble{
         
             width: 250px;
@@ -99,14 +90,26 @@ h2{
            
         }
        
-        
-
+    }
     
-}
-
-h3{
-    color: $color-title ;
-    font-size: 30px;
-    font-family: $font-title;
-    text-shadow: 2px 2px 5px grey;
-}
+    h3{
+        color: $color-title ;
+        font-size: 30px;
+        font-family: $font-title;
+        text-shadow: 2px 2px 5px grey;
+    }
+       
+   
+    
+    
+       
+       
+        
+            
+    
+        
+        
+        
+       
+        
+       
