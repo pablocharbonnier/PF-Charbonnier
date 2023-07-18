@@ -1,9 +1,6 @@
-@mixin tablet {
-    @media screen and (max-width: 992px){
-        @content ;
-    }
+
     
-}
+
 @mixin mobile {
     @media screen and (max-width:576px) {
         @content ;
@@ -13,17 +10,16 @@
 
 $color-title: rgb(25, 25, 112,);
 $font-title: 'Playfair Display', serif;
-$size-title:40px;
+$size-title:30px;
 
 html, body{
+    
     margin: 0;
     padding: 0;
+    
    
 }
 
-html{
-    overflow-x: hidden;
-}
 
 
 
@@ -57,16 +53,7 @@ html{
             height: 180px;
            
         }
-        @include mobile{
-            .logoContainer{
-                width: 100%;
-            }
-            .logo{
-                width: 480px;
-                margin: 0 10px;
-                
-            }
-        }
+     
                 
     }
    
@@ -81,7 +68,7 @@ html{
     position: relative;;
     right: 20px;
         &:hover{
-            background-color: rgb(124, 121, 121); ;   
+            background-color: rgb(124, 121, 121);    
             border-radius: $color-title ; 
         }
        
@@ -123,7 +110,7 @@ html{
             text-align: center;
             text-shadow: 2px 2px 5px gray;
             text-transform: uppercase;
-            margin: 50px 0;
+          
           
 
             
@@ -142,18 +129,21 @@ html{
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
+       
         
        
        
         .card{
             background-color: rgba(255, 255, 255, 40%);
             box-shadow: 2px 2px 5px gray;
+           
         }
         
        
         .col{
          justify-self: center;
-         width: 500px;
+         width: 90%;
+       
         
           
         }
@@ -163,6 +153,39 @@ html{
         .card-text{
             text-align: center;
         }
+    }
+    @include mobile{
+        html{
+            width: 100%;
+        }
+       
+        .row{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 95%;
+        }
+        .card{
+            width: 100%;
+      
+        }
+        .col{
+            
+            width: 100%;
+           
+             
+           }
+           .card-img-top{
+            width: 100%;
+           }
+           .h1-index{
+            width: 80%;
+           }
+           .card-text{
+            width: 100%;
+            text-align: center;
+           }
+       
+    }
         
             
 
@@ -171,54 +194,12 @@ html{
         
             
     
-          @include tablet{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-                .col{
-                    width: 400px;
-                }
-                .row{
-                    width: 900px;
-                }
-        }
-          @include mobile{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            margin: auto;
-                    .col{
-                       width: 100%;
-                     
-                    }
-                    .card-body{
-                        width: 100%;
-                    }
-                    .card{
-                        width:100%;
-                    
-                    }
-                    .card-title{
-                        font-size: 30px;
-                    }
-                    .card-text{
-                        font-size: 25px;
-                    }
-                    .h1-index{
-                        text-align: center;
-                        font-family: $font-title;
-                        font-size: 30px;
-                    }
-                    .sticky{
-                        width: 10%;
-                        position: relative;
-                        left: 30%;
-                    }
-                }
-            }
+    
+      
             .card-zen{
              margin-top: 50px ;
              width: 100%;
+             justify-content: center;
           
 
             

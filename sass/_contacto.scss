@@ -1,4 +1,17 @@
  /* CONTACTO */
+ @mixin tablet {
+    @media screen and (max-width: 992px){
+        @content ;
+    }
+    
+}
+@mixin mobile {
+    @media screen and (max-width:576px) {
+        @content ;
+    }
+}
+
+
  $size-title:40px;
  $font-title: 'Playfair Display', serif;
  
@@ -18,6 +31,9 @@
     padding: 5px 20px;
     margin: auto;
     height: 700px;
+    @include mobile{
+        width: 90%;
+    }
     
     
 }
@@ -26,6 +42,9 @@
     display: grid;
     gap: 16px;
     grid-auto-columns: 100%;
+    @include mobile{
+        width: 90%;
+    }
 }
 .form-title{
     text-align: center;
@@ -34,6 +53,9 @@
     width: 70%;
     color: midnightblue;
     margin: auto;
+    @include mobile{
+        width: 90%;
+    }
     
 }
 .form-input{

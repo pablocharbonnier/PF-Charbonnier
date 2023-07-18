@@ -3,10 +3,6 @@ html, body {
   padding: 0;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 .grid-layout {
   height: 2000px;
   width: 100%;
@@ -26,15 +22,6 @@ html {
 .logoContainer .logo {
   width: 300px;
   height: 180px;
-}
-@media screen and (max-width: 576px) {
-  .logoContainer .logoContainer {
-    width: 100%;
-  }
-  .logoContainer .logo {
-    width: 480px;
-    margin: 0 10px;
-  }
 }
 
 .c2 {
@@ -77,13 +64,12 @@ html {
 
 .h1-index {
   width: 100%;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
   color: rgb(25, 25, 112);
   text-align: center;
   text-shadow: 2px 2px 5px gray;
   text-transform: uppercase;
-  margin: 50px 0;
 }
 
 .c3 {
@@ -102,7 +88,7 @@ html {
 }
 .row .col {
   justify-self: center;
-  width: 500px;
+  width: 90%;
 }
 .row .card-title {
   text-align: center;
@@ -110,56 +96,37 @@ html {
 .row .card-text {
   text-align: center;
 }
-@media screen and (max-width: 992px) {
-  .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-  }
-  .row .col {
-    width: 400px;
-  }
-  .row .row {
-    width: 900px;
-  }
-}
+
 @media screen and (max-width: 576px) {
-  .row {
+  html {
     width: 100%;
+  }
+  .row {
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
+    width: 95%;
   }
-  .row .col {
+  .card {
     width: 100%;
   }
-  .row .card-body {
+  .col {
     width: 100%;
   }
-  .row .card {
+  .card-img-top {
     width: 100%;
   }
-  .row .card-title {
-    font-size: 30px;
+  .h1-index {
+    width: 80%;
   }
-  .row .card-text {
-    font-size: 25px;
-  }
-  .row .h1-index {
+  .card-text {
+    width: 100%;
     text-align: center;
-    font-family: "Playfair Display", serif;
-    font-size: 30px;
-  }
-  .row .sticky {
-    width: 10%;
-    position: relative;
-    left: 30%;
   }
 }
-
 .card-zen {
   margin-top: 50px;
   width: 100%;
+  justify-content: center;
 }
 .card-zen .card-title {
   text-align: center;
@@ -192,81 +159,21 @@ html {
   width: 100%;
 }
 
-.container-nosotros {
-  margin-top: 40px;
-  width: 100%;
+html {
+  overflow-x: hidden;
 }
-.container-nosotros p {
-  width: 350px;
+
+.card-title {
   text-align: center;
-}
-.container-nosotros h1 {
-  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(25, 25, 112);
   font-size: 30px;
-  width: 100%;
-  text-transform: capitalize;
+  text-shadow: 1px 1px 5px;
 }
-.container-nosotros h2 {
-  font-size: 30px;
+
+.card-text {
   text-align: center;
-}
-.container-nosotros h3 {
-  font-size: 30px;
-  position: relative;
-  bottom: 10px;
-  padding: auto;
-  text-align: center;
-}
-.container-nosotros .div-2 {
-  position: relative;
-  top: 50px;
-}
-.container-nosotros .div-3 {
-  position: relative;
-  top: 50px;
-}
-@media screen and (max-width: 992px) {
-  .container-nosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .container-nosotros h1 {
-    margin: auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container-nosotros {
-    display: block;
-    width: 100%;
-  }
-  .container-nosotros .col {
-    width: 100%;
-    height: 700px;
-    margin-left: 60px;
-  }
-  .container-nosotros h1 {
-    width: 100%;
-    margin: auto;
-    font-size: 40px;
-  }
-  .container-nosotros h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-  }
-  .container-nosotros h3 {
-    width: 100%;
-    position: relative;
-    top: 30px;
-    padding: 30px;
-    text-align: center;
-    font-size: 40px;
-  }
-  .container-nosotros p {
-    width: 550px;
-    text-align: center;
-    font-size: 30px;
-  }
+  color: rgb(25, 25, 112);
 }
 
 .form-control {
@@ -436,12 +343,22 @@ h3 {
   margin: auto;
   height: 700px;
 }
+@media screen and (max-width: 576px) {
+  .form {
+    width: 90%;
+  }
+}
 
 .form-container {
   width: 100%;
   display: grid;
   gap: 16px;
   grid-auto-columns: 100%;
+}
+@media screen and (max-width: 576px) {
+  .form-container {
+    width: 90%;
+  }
 }
 
 .form-title {
@@ -451,6 +368,11 @@ h3 {
   width: 70%;
   color: midnightblue;
   margin: auto;
+}
+@media screen and (max-width: 576px) {
+  .form-title {
+    width: 90%;
+  }
 }
 
 .form-input {
@@ -480,7 +402,7 @@ h3 {
 .div-footer {
   background-color: rgb(0, 0, 0);
   width: 100%;
-  height: 300px;
+  height: 400px;
   margin-top: 100px;
   justify-content: center;
 }
@@ -500,12 +422,11 @@ h3 {
   justify-content: center;
 }
 .div-footer .pFooter-derechos {
-  width: 400px;
+  width: 200px;
   color: white;
   margin: auto;
   position: relative;
   top: 110px;
-  left: 35px;
   justify-content: center;
 }
 

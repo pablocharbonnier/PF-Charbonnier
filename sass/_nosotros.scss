@@ -13,101 +13,21 @@
 $size-titulos:30px;
 $color-title: rgb(25, 25, 112,);
 
-
-
-
-   
-.container-nosotros{
-  margin-top: 40px;
- 
-  width: 100%;
- 
- 
-     p{
-          width: 350px;
-          text-align: center;
-         
-          
-        }
-          h1{
-             text-align: center;
-             font-size: 30px;
-             width: 100%;
-             text-transform: capitalize;
-             
-
-                   }
-               h2{
-                   font-size:  30px;
-                   text-align: center;
-               }
-                    h3{
-                         font-size: 30px;
-                         position: relative;
-                         bottom: 10px;
-                         padding: auto;
-                         text-align: center;
-                         
-               }
-              
-               .div-2{
-                 position: relative;
-                 top: 50px;
-                
-               }
-               .div-3{
-                 position: relative;
-                
-                 top: 50px;
-               }
-               
-               
-
-               @include tablet{
-                 display: grid;
-                 grid-template-columns: 1fr 1fr;
-                
-                 h1{
-                   margin: auto;
-                 }
-             }
-
-               @include mobile{
-               display: block;
-               width: 100%;
-             
-               .col{
-                width: 100%;
-                height: 700px;
-                margin-left: 60px;
-               }
-               h1{
-                width: 100%;
-                 margin: auto;
-                 font-size: 40px;
-               }
-               h2{
-                width: 100%;
-                text-align: center;
-                font-size: 40px;
-               }
-               h3{
-                width: 100%;
-                 position: relative;
-                 top: 30px;
-                 padding: 30px;
-                 text-align: center;
-                 font-size: 40px;
-               
-               }
-               p{
-                width: 550px;
-                text-align: center;
-                font-size: 30px;
-               }
-            
-               
-               
-             }
-
+html{
+  overflow-x: hidden;
 }
+
+.card-title{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: $color-title;
+  font-size: $size-titulos;
+  text-shadow: 1px 1px 5px;
+}
+.card-text{
+  text-align: center;
+  color: $color-title;
+}
+   
+
+        
