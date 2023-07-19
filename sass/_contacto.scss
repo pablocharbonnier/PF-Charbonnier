@@ -1,10 +1,11 @@
- /* CONTACTO */
- @mixin tablet {
+
+
+@mixin tablet {
     @media screen and (max-width: 992px){
         @content ;
     }
-    
 }
+
 @mixin mobile {
     @media screen and (max-width:576px) {
         @content ;
@@ -12,17 +13,16 @@
 }
 
 
- $size-title:40px;
- $font-title: 'Playfair Display', serif;
  
-.contacto{
+$size-title: 40px;
+$font-title: 'Playfair Display', serif;
+ .contacto {
     text-align: center;
     color: rgb(25, 25, 112); 
     font-size: $size-title;
     font-family: $font-title;
-    
 }
- .form{
+ .form {
     background-color: rgba(25, 25, 112, 10%);
     box-shadow: 2px 2px 7px grey;
     width: 90%;
@@ -31,34 +31,31 @@
     padding: 5px 20px;
     margin: auto;
     height: 700px;
-    @include mobile{
+     @include mobile {
         width: 90%;
     }
-    
-    
 }
-.form-container{
+ .form-container {
     width: 100%;
     display: grid;
     gap: 16px;
     grid-auto-columns: 100%;
-    @include mobile{
+     @include mobile {
         width: 90%;
     }
 }
-.form-title{
+ .form-title {
     text-align: center;
     font-size: 25px;
     margin-bottom: 5px;
     width: 70%;
     color: midnightblue;
     margin: auto;
-    @include mobile{
+     @include mobile {
         width: 90%;
     }
-    
 }
-.form-input{
+ .form-input {
     font-size: 15px;
     padding: 5px 10px;
     outline: none;
@@ -66,17 +63,16 @@
     border: 1px solid ; 
     border-radius: 5px;
 }
-.form-input--message{
+ .form-input--message {
     resize: none;
     padding: 5px 5px 100px;
 }
-.form-cta{
+ .form-cta {
     font-size: 15px;
-    background-color:rgb(77, 77, 75, );
+    background-color: rgb(77, 77, 75, );
     color: white;
     border: none;
     font-weight: 300px;
     padding: 10px;
     border-radius: 5px;
 }
-

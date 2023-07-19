@@ -81,6 +81,8 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .row .card {
   background-color: rgba(255, 255, 255, 0.4);
@@ -89,40 +91,9 @@ html, body {
 .row .col {
   justify-self: center;
   width: 90%;
-}
-.row .card-title {
-  text-align: center;
-}
-.row .card-text {
-  text-align: center;
+  padding: 0;
 }
 
-@media screen and (max-width: 576px) {
-  html {
-    width: 100%;
-  }
-  .row {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 95%;
-  }
-  .card {
-    width: 100%;
-  }
-  .col {
-    width: 100%;
-  }
-  .card-img-top {
-    width: 100%;
-  }
-  .h1-index {
-    width: 80%;
-  }
-  .card-text {
-    width: 100%;
-    text-align: center;
-  }
-}
 .card-zen {
   margin-top: 50px;
   width: 100%;
@@ -159,6 +130,36 @@ html, body {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .grid-layout {
+    grid-template-areas: "header" "navigator" "contenido" "footer";
+    grid-template-rows: auto;
+  }
+  .logoContainer .logo {
+    width: 200px;
+    height: 120px;
+  }
+  .navbar-brand, .nav-link {
+    font-size: 16px;
+  }
+  .h1-index {
+    font-size: 24px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .card-zen .card-title {
+    font-size: 24px;
+  }
+  .sticky {
+    width: 100%;
+    left: 0;
+  }
+  .sticky .logo-sticky {
+    width: 40px;
+    height: 40px;
+  }
+}
 html {
   overflow-x: hidden;
 }
@@ -176,6 +177,14 @@ html {
   color: rgb(25, 25, 112);
 }
 
+@media only screen and (max-width: 600px) {
+  .card-title {
+    font-size: 30px;
+  }
+  .card-text {
+    font-size: 20px;
+  }
+}
 .form-control {
   position: relative;
   right: 20px;
@@ -185,17 +194,20 @@ html {
   margin-top: 80px;
   width: 100%;
 }
-.container-proyectos .row-proyectos {
+
+.row-proyectos {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.container-proyectos .text-proyectos {
+
+.text-proyectos {
   width: 500px;
   padding-left: 40px;
   color: midnightblue;
 }
-.container-proyectos .h1-proyectos {
+
+.h1-proyectos {
   color: midnightblue;
   width: 100%;
   font-family: "Playfair Display", serif;
@@ -204,55 +216,47 @@ html {
   text-shadow: 2px 2px 5px grey;
   text-transform: uppercase;
 }
-.container-proyectos .col {
+
+.col {
   width: 500px;
   margin: 0 5px;
 }
+
 @media screen and (max-width: 992px) {
-  .container-proyectos .container-proyectos {
+  .container-proyectos {
     width: 300px;
   }
-  .container-proyectos .h1-proyectos {
-    width: 100%;
-  }
-  .container-proyectos .row-proyectos {
+  .row-proyectos {
     width: 90%;
   }
-  .container-proyectos .col {
+  .col {
     width: 100%;
     margin: auto;
   }
-  .container-proyectos .text-proyectos {
+  .text-proyectos {
     padding-left: 10px;
     width: 100%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .container-proyectos {
     margin-top: 80px;
     width: 100%;
   }
-  .container-proyectos .row-proyectos {
+  .row-proyectos {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
   }
-  .container-proyectos .col {
-    width: 100%;
+  .col {
+    width: 80%;
     margin-left: 5px;
   }
-  .container-proyectos h1 {
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .container-proyectos .text-proyectos {
-    align-items: center;
-    width: 100%;
+  .text-proyectos {
+    width: 90%;
     font-size: 25px;
   }
 }
-
 /* INMUEBLES */
 h1 {
   width: 100%;
@@ -289,15 +293,11 @@ h2 {
 }
 @media screen and (max-width: 992px) {
   .container-alquiler {
-    width: 100%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 576px) {
   .container-alquiler {
-    width: 100%;
-    display: grid;
     grid-template-columns: 1fr;
   }
 }
@@ -307,7 +307,7 @@ h2 {
   align-items: center;
 }
 .container-alquiler .rounded {
-  width: 90%;
+  width: 80%;
   position: relative;
   left: 5px;
   box-shadow: 2px 2px 5px grey;
@@ -325,7 +325,6 @@ h3 {
   text-shadow: 2px 2px 5px grey;
 }
 
-/* CONTACTO */
 .contacto {
   text-align: center;
   color: rgb(25, 25, 112);

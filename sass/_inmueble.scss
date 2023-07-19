@@ -1,108 +1,95 @@
-@mixin tablet {
-    @media screen and (max-width: 992px){
-        @content ;
-    }
-}
 
-@mixin mobile {
-    @media screen and  (max-width:576px) {
-        @content ;
-    }
-}
-$color-title: midnightblue;
-$size-title:40px;
-$font-title: 'Playfair Display', serif;
-
+@mixin tablet { 
+    @media screen and (max-width: 992px){ 
+        @content ; 
+    } 
+} 
  
- /* INMUEBLES */
-
-
- h1{
-    width: 100%;
-    font-size: $size-title;
-    color: $color-title ;
-    font-family: $font-title;
-    text-shadow: 2px 2px 5px grey;
-    text-transform: uppercase;
-    
-    text-align: center;
-    margin-top: 20px;
-}
-h2{
-    color: $color-title ;
-    margin: 50px 0 30px 20px;
-    font-family: $font-title;
-    text-shadow: 2px 2px 5px grey;
-}
-.container-alquiler{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+@mixin mobile { 
+    @media screen and  (max-width:576px) { 
+        @content ; 
+    } 
+} 
+ 
+$color-title: midnightblue; 
+$size-title:40px; 
+$font-title: 'Playfair Display', serif; 
+ 
   
+ /* INMUEBLES */ 
+ 
+ 
+h1{ 
+    width: 100%; 
+    font-size: $size-title; 
+    color: $color-title ; 
+    font-family: $font-title; 
+    text-shadow: 2px 2px 5px grey; 
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-top: 20px; 
+} 
+ 
+h2{ 
+    color: $color-title ; 
+    margin: 50px 0 30px 20px; 
+    font-family: $font-title; 
+    text-shadow: 2px 2px 5px grey; 
+} 
+ 
+.container-alquiler{ 
+    width: 100%; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
    
-    .column-inmueble{
-        width: 380px;
-        color: $color-title;
-        flex-direction: column;
-        text-align: center;
-    }
-    .p-inmueble{
-        width: 200px;
-        margin: auto;
-    }
+    
+    .column-inmueble{ 
+        width: 380px; 
+        color: $color-title; 
+        flex-direction: column; 
+        text-align: center; 
+    } 
+    .p-inmueble{ 
+        width: 200px; 
+        margin: auto; 
+    } 
+      
+     @include tablet{ 
+         grid-template-columns: 1fr 1fr; 
+     } 
+          
+     @include mobile{ 
+         grid-template-columns: 1fr; 
+     } 
+         
+    .column-inmueble{ 
+       width: 100%; 
+       flex-direction: column; 
+       align-items: center; 
+    } 
      
-     @include tablet{
-             width: 100%;
-             display: grid;
-             grid-template-columns: 1fr 1fr;
-         }
-         
-         
-     @include mobile{
-             width: 100%;
-             display: grid;
-             grid-template-columns: 1fr;
-           
-             
-         }
-        
+    .rounded{ 
+       width:80%; 
+       position: relative; 
+       left: 5px; 
+       box-shadow: 2px 2px 5px grey; 
+    } 
     
+    .p-inmueble{ 
+        width: 250px; 
+        margin: auto; 
+        padding: 10px; 
+    } 
+} 
+ 
+h3{ 
+    color: $color-title ; 
+    font-size: 30px; 
+    font-family: $font-title; 
+    text-shadow: 2px 2px 5px grey; 
+}
     
-        .column-inmueble{
-           width: 100%;
-           flex-direction: column;
-           align-items: center;
-          
-        }
-        .rounded{
-           width:90%;
-           position: relative;
-           left: 5px;
-           box-shadow: 2px 2px 5px grey;
-          
-          
-        }
-   
-        .p-inmueble{
-        
-            width: 250px;
-            margin: auto;
-            padding: 10px;
-           
-        }
-       
-    }
-    
-    h3{
-        color: $color-title ;
-        font-size: 30px;
-        font-family: $font-title;
-        text-shadow: 2px 2px 5px grey;
-    }
-       
-   
-    
-    
+
        
        
         

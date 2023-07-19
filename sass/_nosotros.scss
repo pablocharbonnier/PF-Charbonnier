@@ -1,14 +1,4 @@
-@mixin tablet {
-  @media screen and (max-width: 992px){
-      @content ;
-  }
-  
-}
-@mixin mobile {
-  @media screen and (max-width:576px) {
-      @content ;
-  }
-}
+
 
 $size-titulos:30px;
 $color-title: rgb(25, 25, 112,);
@@ -27,6 +17,16 @@ html{
 .card-text{
   text-align: center;
   color: $color-title;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-title {
+    font-size: $size-titulos;
+  }
+  
+  .card-text {
+    font-size: 20px;
+  }
 }
    
 

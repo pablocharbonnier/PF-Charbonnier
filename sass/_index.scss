@@ -1,11 +1,4 @@
 
-    
-
-@mixin mobile {
-    @media screen and (max-width:576px) {
-        @content ;
-    }
-}
 
 
 $color-title: rgb(25, 25, 112,);
@@ -129,6 +122,8 @@ html, body{
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
+        padding: 0;
+        margin: 0;
        
         
        
@@ -143,50 +138,15 @@ html, body{
         .col{
          justify-self: center;
          width: 90%;
+         padding: 0;
+         
        
         
           
         }
-        .card-title{
-            text-align: center;
-        }
-        .card-text{
-            text-align: center;
-        }
-    }
-    @include mobile{
-        html{
-            width: 100%;
-        }
-       
-        .row{
-            display: grid;
-            grid-template-columns: 1fr;
-            width: 95%;
-        }
-        .card{
-            width: 100%;
       
-        }
-        .col{
-            
-            width: 100%;
-           
-             
-           }
-           .card-img-top{
-            width: 100%;
-           }
-           .h1-index{
-            width: 80%;
-           }
-           .card-text{
-            width: 100%;
-            text-align: center;
-           }
-       
     }
-        
+   
             
 
         
@@ -238,6 +198,47 @@ html, body{
                    width: 100%;
                } 
              
+               @media (max-width: 600px) {
+                .grid-layout {
+                    grid-template-areas: 
+                        'header'
+                        'navigator'
+                        'contenido'
+                        'footer';
+                    grid-template-rows: auto;
+                }
+            
+                .logoContainer .logo {
+                    width: 200px;
+                    height: 120px;
+                }
+            
+                .navbar-brand, .nav-link {
+                    font-size: 16px;
+                }
+            
+                .h1-index {
+                    font-size: 24px;
+                }
+            
+                .row {
+                    grid-template-columns: 1fr;
+                }
+            
+                .card-zen .card-title {
+                    font-size: 24px;
+                }
+            
+                .sticky {
+                    width: 100%;
+                    left: 0;
+                }
+            
+                .sticky .logo-sticky {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
                        
             
             
