@@ -1,19 +1,4 @@
 
-
-@mixin tablet {
-    @media screen and (max-width: 992px){
-        @content ;
-    }
-}
-
-@mixin mobile {
-    @media screen and (max-width:576px) {
-        @content ;
-    }
-}
-
-
- 
 $size-title: 40px;
 $font-title: 'Playfair Display', serif;
  .contacto {
@@ -31,18 +16,12 @@ $font-title: 'Playfair Display', serif;
     padding: 5px 20px;
     margin: auto;
     height: 700px;
-     @include mobile {
-        width: 90%;
-    }
 }
  .form-container {
     width: 100%;
     display: grid;
     gap: 16px;
     grid-auto-columns: 100%;
-     @include mobile {
-        width: 90%;
-    }
 }
  .form-title {
     text-align: center;
@@ -51,9 +30,6 @@ $font-title: 'Playfair Display', serif;
     width: 70%;
     color: midnightblue;
     margin: auto;
-     @include mobile {
-        width: 90%;
-    }
 }
  .form-input {
     font-size: 15px;
@@ -69,10 +45,36 @@ $font-title: 'Playfair Display', serif;
 }
  .form-cta {
     font-size: 15px;
-    background-color: rgb(77, 77, 75, );
+    background-color: rgb(77, 77, 75);
     color: white;
     border: none;
     font-weight: 300px;
     padding: 10px;
     border-radius: 5px;
+}
+ @media only screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+     .form-title {
+        width: 90%;
+    }
+    .contacto{
+        width: 90%;
+    }
+} 
+@media only screen and (max-width: 375px) {
+    .form {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+    .form-title {
+        width: 90%;
+    }
+    .contacto{
+        width: 90%;
+    }
 }
