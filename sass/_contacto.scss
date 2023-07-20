@@ -53,10 +53,21 @@ $font-title: 'Playfair Display', serif;
     border-radius: 5px;
 }
  @media only screen and (max-width: 600px) {
+    .grid-layout {
+        grid-template-areas: 
+            'header'
+            'navigator'
+            'contenido'
+            'footer';
+        grid-template-rows: auto;
+    }
     .form {
         width: 100%;
         max-width: none;
         height: auto;
+    }
+    .form-container{
+        width: 100%;
     }
      .form-title {
         width: 90%;

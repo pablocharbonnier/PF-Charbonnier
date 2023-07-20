@@ -61,7 +61,7 @@ $font-title: 'Playfair Display', serif;
  @include mobile {
     .container-proyectos {
         margin-top: 80px;
-        width: 100%;
+        width: 90%;
     }
      .row-proyectos {
         width: 100%;
@@ -69,11 +69,11 @@ $font-title: 'Playfair Display', serif;
         grid-template-columns: 1fr;
     }
      .col {
-        width: 80%;
-        margin-left: 5px;
+        width: auto;
+        margin-left:0 5px;
     }
      .text-proyectos {
-        width: 90%;
-        font-size: 25px;
+        width: auto;
+        padding-left: 10px;
     }
 }
